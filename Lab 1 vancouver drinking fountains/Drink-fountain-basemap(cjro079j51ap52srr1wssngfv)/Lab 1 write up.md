@@ -9,4 +9,4 @@ I’ve constructed this map based on my learning from Andy Skinner’s article I
 I received help from Professor Luke Bergmann and Jamie Li. Professor Luke Bergmann directed me to insightful resources and guided through the workflow. We conversed mainly through Canvas. Jamie helped me understand the differences between different datasets and data format (Geojson, json, csv…). She was new to the world of interactive mapping, but was able to apply her knowledge from computer science to help me learn. She introduced me to basic editing platforms such as Atom, which I intend to use more often in the future.
 
 
-![alt text](https://github.com/UBC-GEOB472-Spring2019/nicoleleekauer-web/blob/master/Lab%201%20vancouver%20drinking%20fountains/Drink-fountain-basemap(cjro079j51ap52srr1wssngfv)/Screen%20Shot%202019-02-03%20at%202.34.17%20PM.png "Vancouver Drink Fountain")
+![alt text](https://raw.githubusercontent.com/UBC-GEOB472-Spring2019/nicoleleekauer-web/master/Lab%201%20vancouver%20drinking%20fountains/Drink-fountain-basemap(cjro079j51ap52srr1wssngfv)/Screen%20Shot%202019-02-03%20at%202.34.17%20PM.png "Vancouver Drink Fountain")
