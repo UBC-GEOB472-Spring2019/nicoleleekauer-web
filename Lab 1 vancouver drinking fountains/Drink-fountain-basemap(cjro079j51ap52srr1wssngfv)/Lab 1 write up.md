@@ -10,3 +10,5 @@ I received help from Professor Luke Bergmann and Jamie Li. Professor Luke Bergma
 
 
 ![alt text](https://raw.githubusercontent.com/UBC-GEOB472-Spring2019/nicoleleekauer-web/master/Lab%201%20vancouver%20drinking%20fountains/Drink-fountain-basemap(cjro079j51ap52srr1wssngfv)/Screen%20Shot%202019-02-03%20at%202.34.17%20PM.png "Vancouver Drink Fountain")
+
+https://api.mapbox.com/styles/v1/nicoleleekauer/cjro079j51ap52srr1wssngfv.html?fresh=true&title=true&access_token=pk.eyJ1Ijoibmljb2xlbGVla2F1ZXIiLCJhIjoiY2pybDdlMnd4MDVvYjN5bXRieGt6dXdqbCJ9.dJrDYVCc-fWLTVw9WDOQ3w#11.9/49.271459/-123.179061/0
