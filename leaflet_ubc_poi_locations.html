@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UBC POI Locations</title>
+  <!-- External Stylesheets -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Our web map and content will go here -->
+    <!-- Add the Leaflet JavaScript library -->
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<div id="map" style="width: 1120px; height: 700px"></div>
+<!-- HTML Page Elements are here -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Web Map Scripts are here -->
+<script>
+    // Create variable to hold map element, give initial settings to map
+    var map = L.map('map',{ center: [49.262782, -123.250489], zoom: 14});
+</script>
+<script>
+// Add OpenStreetMap tile layer to map element
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
+</script>
+<script>
+// load GeoJSON from an external file
+
+
+$.getJSON("https://raw.githubusercontent.com/UBCGeodata/ubcv-locations/master/geojson/ubcv_poi.geojson",function(data){
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data).addTo(map);
+}
+);
+// Create an Empty Popup
+var popup = L.popup();
+
+// Write function to set Properties of the Popup
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
+
+// Listen for a click event on the Map element
+map.on('click', onMapClick);
+</script>
+</body>
+</html>
