@@ -5,16 +5,7 @@
     <script src="https://unpkg.com/deck.gl@^6.0.0/deckgl.min.js"></script>
 
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
-    <div id='map'></div>
-    <script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoibmljb2xlbGVla2F1ZXIiLCJhIjoiY2pybDdlMnd4MDVvYjN5bXRieGt6dXdqbCJ9.dJrDYVCc-fWLTVw9WDOQ3w';
-    const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/nicoleleekauer/cjro1kz082rzg2srwiod71h1l',
-    center: [49.260701, -123.246015],
-    zoom: 14
-    });
-    </script>
+
     <style type="text/css">
       body {
         width: 100vw;
@@ -49,31 +40,30 @@
     const {DeckGL, GeoJsonLayer} = deck;
 
     const LIGHT_SETTINGS = {
-      lightsPosition: [-125, 50.5, 5000, -122.8, 48.5, 8000],
+      lightsPosition: [-15, 50.5, 5000, -122.8, 48.5, 8000],
       ambientRatio: 0.2,
       diffuseRatio: 0.5,
-      specularRatio: 0.3,
+      specularRatio: 0.2,
       lightsStrength: [2.0, 0.0, 1.0, 0.0],
       numberOfLights: 2
     };
 
     const COLOR_SCALE = [
-      // negative
       [65, 182, 196],
       [127, 205, 187],
       [199, 233, 180],
       [237, 248, 177],
 
       // positive
-      [255, 255, 204],
-      [255, 237, 160],
-      [254, 217, 118],
-      [254, 178, 76],
-      [253, 141, 60],
-      [252, 78, 42],
-      [227, 26, 28],
-      [189, 0, 38],
-      [128, 0, 38]
+      [10, 47, 81],
+      [14, 77, 100],
+      [19, 113, 119],
+      [24, 137, 119],
+      [29, 154, 108],
+      [57, 169, 107],
+      [86, 184, 112],
+      [153, 212, 146],
+      [187, 255, 238]
     ];
 
     const geojsonLayer = new GeoJsonLayer({
@@ -95,11 +85,11 @@
     });
 
     new DeckGL({
-      mapboxApiAccessToken: '<mapbox-access-token>',
+      mapboxApiAccessToken: 'pk.eyJ1Ijoibmljb2xlbGVla2F1ZXIiLCJhIjoiY2pybDdlMnd4MDVvYjN5bXRieGt6dXdqbCJ9.dJrDYVCc-fWLTVw9WDOQ3w',
       mapStyle: 'mapbox://styles/mapbox/light-v9',
-      latitude: 49.254,
-      longitude: -123.13,
-      zoom: 11,
+      latitude: 49.2606,
+      longitude: -123.2460,
+      zoom: 13.5,
       maxZoom: 16,
       pitch: 45,
       layers: [geojsonLayer]
